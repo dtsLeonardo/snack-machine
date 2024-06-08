@@ -8,20 +8,19 @@ Este projeto implementa uma máquina de salgadinhos utilizando a linguagem VHDL.
 
 O projeto é dividido em várias entidades VHDL, cada uma responsável por uma parte específica da funcionalidade do sistema. Abaixo está a lista das principais entidades e sua descrição:
 
-### 1. Controladores
+### 1. Controladore
 - **Controlador Principal**: Gerencia a lógica de controle geral da máquina, incluindo a validação das entradas e a coordenação das operações dos outros componentes.
-- **Controlador de Entrada**: Recebe e valida a quantidade de salgadinhos, o preço por unidade e o dinheiro inserido.
-- **Controlador de Troco**: Calcula o troco a ser devolvido ao usuário com base nas entradas fornecidas.
 
 ### 2. Componentes Básicos
 - **Comparador**: Compara dois valores e determina se são iguais, diferentes, maior ou menor.
 - **Somador**: Realiza operações de adição necessárias para calcular o total a ser pago e o troco.
+- **Registrador**: Armazena os valores utilizados durante a operação.
 
 ## Instalação e Configuração
 
 1. **Ferramentas Necessárias**:
-   - Simulador VHDL (ModelSim, GHDL, etc.)
-   - Ambiente de desenvolvimento VHDL (Vivado, Quartus, etc.)
+   - Simulador VHDL (ModelSim)
+   - Ambiente de desenvolvimento VHDL (Quartus)
 
 2. **Download do Código**:
    Baixe ou clone o repositório contendo os arquivos VHDL do projeto.
@@ -61,14 +60,6 @@ Aqui estão alguns exemplos de entradas e saídas esperadas para a máquina de s
   - Dinheiro Inserido: 5
 - **Saída**:
   - Troco: 0
-
-## Estrutura de Arquivos
-
-- `controlador_principal.vhd`: Lógica de controle principal.
-- `controlador_entrada.vhd`: Gerenciamento das entradas.
-- `controlador_troco.vhd`: Cálculo do troco.
-- `comparador.vhd`: Comparações necessárias para a lógica do sistema.
-- `somador.vhd`: Operações de soma.
 
 ## Contribuições
 
